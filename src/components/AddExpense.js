@@ -43,7 +43,7 @@ const AddExpense = () => {
             <form onSubmit={onSubmit}>
                 <div className='formitem'>
                     <label
-                        for="nom">
+                        htmlFor="nom">
                         Nom
                     </label>
                     <input
@@ -56,7 +56,7 @@ const AddExpense = () => {
                 </div>
                 <div className='formitem'>
                     <label
-                        for="prix">Prix</label>
+                        htmlFor="prix">Prix</label>
                     <input
                         type="text"
                         name="prix"
