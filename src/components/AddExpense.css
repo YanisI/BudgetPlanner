@@ -1,0 +1,57 @@
+.AddTitle {
+    font-size: 40px;
+}
+
+.formitem {
+    position: relative;
+    display: flex;
+}
+
+.formitem > label {
+    position: absolute;
+    z-index:3;
+    background-color: white;
+    left: 15%;
+    top : -3px;
+    width: 50px;
+    text-align: center;
+    color: steelblue;
+}
+
+.formitem input {
+    margin: 10px 10%;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 30px;
+    font-size: 18px;
+    appearance: none;
+    border: 1px solid steelblue;
+    outline: none;
+}
+
+
+
+.addButton{
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 50px;
+
+    color: white;
+    background-color: steelblue;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    margin: 0 auto;
+    transition: 0.5s ease;
+}
+
+.addButton:hover{
+    color: steelblue;
+    background-color: white;
+    border: 2px solid steelblue;
+    transition: 0.5s ease;
+}

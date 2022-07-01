@@ -1,0 +1,54 @@
+.budget {
+    display: flex;
+    align-items: center;
+    flex-grow:1 ;
+    
+    height: 100px;
+    min-width: 270px;
+    font-size: 10px;
+    
+    padding: 10px 40px;
+    margin: 10px;
+
+    border-radius: 10px;
+}
+.red {
+    background-color: #e75f5ff6;
+
+}
+.green {
+    background-color: #a5ee7af6;
+}
+.blue {
+    background-color: #7aa3eef6;
+}
+
+.amount {
+    display: block;
+    height: fit-content;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editBtn {
+    font-size: 20px;
+    background-color: steelblue;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+.editBtn:hover {
+    color: steelblue;
+    background-color: white;
+    transition: 0.5s;
+    border: 2px solid steelblue;
+}
+

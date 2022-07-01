@@ -1,0 +1,42 @@
+
+
+.expenseList {
+    margin: 10px 10px;
+    list-style: none;
+    width: 100%;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(190deg,rgb(206, 30, 88), rgb(255, 0, 43));
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px 0px;
+    height: 40px;
+    padding: 0px 10px;
+}
+
+.supprBtn {
+    padding: 2px 5px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: steelblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.supprBtn:hover {
+    color: steelblue;
+    background-color: white;
+    border: 1px solid steelblue;
+    transition: 0.5s ease;
+
+}
