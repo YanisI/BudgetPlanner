@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import "./ExpenseList.css"
 import { AppContext } from '../context/AppContext'
 
-const ExpenseList = () => {
+const ExpenseList = ({filter, setFilter}) => {
 
     const { expenses,dispatch } = useContext(AppContext);
 
@@ -15,7 +15,8 @@ const ExpenseList = () => {
 
     return (
         <ul className='expenseList'>
-            {expenses.map((item, index) => {
+            {expenses.filter((exp) => exp.name.toLowerCase().includes(filter.toLowerCase()))
+            .map((item, index) => {
                 return (
                     <li key={index} className="expense-item">
                         <span>{item.name}</span>

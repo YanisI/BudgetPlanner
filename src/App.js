@@ -5,8 +5,12 @@ import Expense from './components/Expense'
 import ExpenseList from './components/ExpenseList';
 import AddExpense from './components/AddExpense';
 import { AppProvider } from './context/AppContext';
+import React, {useState} from 'react';
 
 function App() {
+
+  const [filter,setFilter] = useState("");
+
   return (
     <AppProvider>
       <div>
@@ -27,8 +31,10 @@ function App() {
               className='input'
               type="text"
               placeholder='Type to search...'
+              value={filter} 
+              onChange={(e) => setFilter(e.target.value)}
             />
-            <ExpenseList />
+            <ExpenseList filter={filter} setFilter={setFilter}/>
           </div>
         </div>
         <div className='Add'>
